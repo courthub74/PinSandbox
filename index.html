@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Num Sandbox</title>
+
+    <!-- SCSS -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main>
+
+        <h1>Pin Login</h1>
+
+        <!-- First Row pins -->
+        <div class="pin_row">
+            <label for="first_row">Pin # Row 1:</label>
+            <section class="pin_nums_row">
+                <input type="password" maxlength="1" class="pin_put">
+                <input type="password" maxlength="1" class="pin_put">
+                <input type="password" maxlength="1" class="pin_put">
+                <input type="password" maxlength="1" class="pin_put">
+            </section>
+        </div>
+
+        <!-- Second Row Pins -->
+        <div class="pin_row">
+            <label for="second_row">Pin # Row 2:</label>
+            <section class="pin_nums_row">
+                <input type="password" maxlength="1" class="pin_put_two">
+                <input type="password" maxlength="1" class="pin_put_two">
+                <input type="password" maxlength="1" class="pin_put_two">
+                <input type="password" maxlength="1" class="pin_put_two">
+            </section>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pin_row">
+            <button class="submit_button">Submit</button>
+        </div>
+    </main>
+    
+    <!-- JS -->
+     <script src="./pin_code.js"></script>
+</body>
+</html>
