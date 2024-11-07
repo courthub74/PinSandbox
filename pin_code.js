@@ -5,8 +5,6 @@ const inputs_1 = document.querySelectorAll('.pin_put');
 const inputs_2 = document.querySelectorAll('.pin_put_two');
 
 
-// Query whole main (for resetting)
-
 // First Row JS
 // forEach - input_1 is the callback | key_1 is the argument
 inputs_1.forEach((input_1, key_1) => {
@@ -109,29 +107,38 @@ inputs_2.forEach((input_second_row, key_second_row) => {
                             }
                         }
                     }
-                })
+                });
             }
         }
-    })
-})
+    });
+});
+
+// Query whole main (for resetting)
+const form = document.querySelector('form');
+
+// Reset Button Function
+reset = () => {
+    // Reset the whole page
+    form.reset();
+}
 
 
 // Play with mapping Arrays
-const users = [
-    {
-        name: "Courtney",
-        yearBorn: 1976,
-    },
-    {
-        name: "Helen",
-        yearBorn: 1984,
-    }
-];
+// const users = [
+//     {
+//         name: "Courtney",
+//         yearBorn: 1976,
+//     },
+//     {
+//         name: "Helen",
+//         yearBorn: 1984,
+//     }
+// ];
 
-// In summaries variable, map through users data
-const summaries = users.map(user => {
-    return `${user.name} was born in ${user.yearBorn}`;
-});
+// // In summaries variable, map through users data
+// const summaries = users.map(user => {
+//     return `${user.name} was born in ${user.yearBorn}`;
+// });
 
-console.log(summaries);
+// console.log(summaries);
 

@@ -21,6 +21,11 @@ body main h1 {
   text-align: center;
   color: white;
 }
+body main form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
 body main .pin_row {
   display: flex;
   flex-direction: column;
@@ -75,4 +80,11 @@ body main .pin_row .submit_button {
 body main .pin_row .submit_button.entered {
   background-color: white;
   color: rgb(29, 48, 48);
+}
+body main .pin_row .reset_button {
+  background-color: rgb(29, 48, 48);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

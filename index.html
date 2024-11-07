@@ -14,32 +14,40 @@
 
         <h1>Pin Login</h1>
 
-        <!-- First Row pins -->
-        <div class="pin_row">
-            <label for="first_row">Pin # Row 1:</label>
-            <section class="pin_nums_row" id="pin_row_one">
-                <input type="password" maxlength="1" class="pin_put">
-                <input type="password" maxlength="1" class="pin_put">
-                <input type="password" maxlength="1" class="pin_put">
-                <input type="password" maxlength="1" class="pin_put">
-            </section>
-        </div>
+        <form>
+            <!-- First Row pins -->
+            <div class="pin_row">
+                <label for="first_row">Pin # Row 1:</label>
+                <section class="pin_nums_row" id="pin_row_one">
+                    <input type="password" maxlength="1" class="pin_put">
+                    <input type="password" maxlength="1" class="pin_put">
+                    <input type="password" maxlength="1" class="pin_put">
+                    <input type="password" maxlength="1" class="pin_put">
+                </section>
+            </div>
 
-        <!-- Second Row Pins -->
-        <div class="pin_row">
-            <label for="second_row">Pin # Row 2:</label>
-            <section class="pin_nums_row">
-                <input type="password" maxlength="1" class="pin_put_two">
-                <input type="password" maxlength="1" class="pin_put_two">
-                <input type="password" maxlength="1" class="pin_put_two">
-                <input type="password" maxlength="1" class="pin_put_two">
-            </section>
-        </div>
+            <!-- Second Row Pins -->
+            <div class="pin_row">
+                <label for="second_row">Pin # Row 2:</label>
+                <section class="pin_nums_row">
+                    <input type="password" maxlength="1" class="pin_put_two">
+                    <input type="password" maxlength="1" class="pin_put_two">
+                    <input type="password" maxlength="1" class="pin_put_two">
+                    <input type="password" maxlength="1" class="pin_put_two">
+                </section>
+            </div>
 
-        <!-- Submit Button -->
-        <div class="pin_row">
-            <button class="submit_button">Submit</button>
-        </div>
+            <!-- Submit Button -->
+            <div class="pin_row">
+                <button class="submit_button">Submit</button>
+            </div>
+
+            <!-- Reset Button -->
+            <div class="pin_row">
+                <button class="reset_button" onclick="reset()">Click to Clear</button>
+            </div>
+        </form>
+
     </main>
     
     <!-- JS -->

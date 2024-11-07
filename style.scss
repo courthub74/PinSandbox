@@ -20,6 +20,11 @@ body {
             text-align: center;
             color: white;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
         // The Pin Rows
         .pin_row {
             display: flex;
@@ -79,6 +84,15 @@ body {
             .submit_button.entered {
                 background-color: white;
                 color: rgb(29, 48, 48);
+            }
+
+            // Reset Button
+            .reset_button {
+                background-color: rgb(29, 48, 48);
+                color: white;
+                font-size: 1rem;
+                font-weight: bold;
+                border: none;
             }
         }
     }
