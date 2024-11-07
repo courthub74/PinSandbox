@@ -107,10 +107,12 @@ inputs_2.forEach((input_second_row, key_second_row) => {
                                 console.log("The Pins Match");
                                 // change the button css class
                                 submit_button.classList.add('entered');
+                                // Make notification display
                             } else {
                                 console.log("The Pins Don't match");
                                 // remove the entered css class
                                 submit_button.classList.remove('entered');
+                                // Make Don't match notification display
                             }
                         }
                     }

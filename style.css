@@ -87,4 +87,32 @@ body main .pin_row .reset_button {
   font-size: 1rem;
   font-weight: bold;
   border: none;
+}
+body main .pin_match_confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .pin_match_confirm .match_ {
+  display: none;
+}
+body main .pin_match_confirm .match_.show {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #32B43B;
+  font-size: 1.5rem;
+}
+body main .pin_match_confirm .no_match_ {
+  display: none;
+}
+body main .pin_match_confirm .no_match_.show {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DE391C;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
