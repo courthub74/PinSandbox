@@ -4,6 +4,9 @@ const inputs_1 = document.querySelectorAll('.pin_put');
 // Query second row of inputs by class
 const inputs_2 = document.querySelectorAll('.pin_put_two');
 
+// Submit button to change the color
+const submit_button = document.querySelector('.submit_button');
+
 
 // First Row JS
 // forEach - input_1 is the callback | key_1 is the argument
@@ -102,8 +105,12 @@ inputs_2.forEach((input_second_row, key_second_row) => {
                             if (pinsTwo_compare === pinsOne_compare) {
                                 // Test print
                                 console.log("The Pins Match");
+                                // change the button css class
+                                submit_button.classList.add('entered');
                             } else {
                                 console.log("The Pins Don't match");
+                                // remove the entered css class
+                                submit_button.classList.remove('entered');
                             }
                         }
                     }
