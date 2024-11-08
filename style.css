@@ -25,6 +25,7 @@ body main form {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  transition: 0.2s all ease-in;
 }
 body main .pin_row {
   display: flex;
@@ -104,6 +105,7 @@ body main .pin_match_confirm .match_.show {
   justify-content: center;
   color: #32B43B;
   font-size: 1.5rem;
+  transition: 0.2s all ease-in;
 }
 body main .pin_match_confirm .no_match_ {
   display: none;
@@ -115,4 +117,5 @@ body main .pin_match_confirm .no_match_.show {
   justify-content: center;
   color: #DE391C;
   font-size: 1.5rem;
+  transition: 0.2s all ease-in;
 }/*# sourceMappingURL=style.css.map */

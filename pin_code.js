@@ -1,3 +1,5 @@
+// GLOBAL VARIABLES
+
 // Query first row of inputs by class
 const inputs_1 = document.querySelectorAll('.pin_put');
 
@@ -6,6 +8,12 @@ const inputs_2 = document.querySelectorAll('.pin_put_two');
 
 // Submit button to change the color
 const submit_button = document.querySelector('.submit_button');
+
+// MATCH notify
+const match_notify = document.querySelector('.match_');
+
+// NO MATCH notify
+const no_match_notify = document.querySelector('.no_match_');
 
 
 // First Row JS
@@ -108,11 +116,16 @@ inputs_2.forEach((input_second_row, key_second_row) => {
                                 // change the button css class
                                 submit_button.classList.add('entered');
                                 // Make notification display
-                            } else {
-                                console.log("The Pins Don't match");
+                                match_notify.classList.add('show');
+                                // Remove the No Match notification
+                                no_match_notify.classList.remove('show');
+                            } else if (pinsTwo_compare !== pinsOne_compare) {
                                 // remove the entered css class
                                 submit_button.classList.remove('entered');
-                                // Make Don't match notification display
+                                // Remove match notification display
+                                match_notify.classList.remove('show');
+                                // Make No match notification display
+                                no_match_notify.classList.add('show');
                             }
                         }
                     }
